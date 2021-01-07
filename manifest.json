@@ -1,0 +1,29 @@
+{
+    "name": "ext",
+    "description": "extension",
+    "version": "0.1",
+    "manifest_version": 2,
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArUPLQ7aq7R1O49DE+LLSkUIVpSu/kigv3b0ROz4npfkhIy6ML8R99XDU0Bbp05biVjQtLpIRYT6ej7w6GB0yV3qE51/H17HTqN5HvbPrQqVBc/UzzQ+T9QFwVsFjpqPP8Rxi5aeFRdHax7DHsSDHFiGgbdJJU50BMQhYihjF2pfXAPULjWStFdrj+XZ66jUIy7i2IWw7dl+jDy30mWg8heGFcvKFEYGlJ2c7uHry2WYRUv2/wZciGd91YHuSZ9+k6jrMvS+UbgFP7hxzU+Tl0VNiM0lCZecDnoCJspoyEBw1QdfQrrb1R1qlhifsiTqJa7J01+9ZW6etEbytokHwrQIDAQAB",
+    "icons": {
+
+    },
+    "background": {
+        "scripts": [
+            "./background.js",
+            "./jsrsasign-all-min.js"
+        ]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Simple extension"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "http://*/*",
+        "https://*/*",
+        "storage",
+        "identity"
+    ]
+}
